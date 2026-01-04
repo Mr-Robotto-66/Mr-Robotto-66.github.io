@@ -309,6 +309,12 @@ h1 {
   flex: 1;
 }
 
+.list-genie-card .card-logo {
+  border: none;
+  background: none;
+  box-shadow: none;
+}
+
 .card:hover {
   transform: translateY(-4px);
   border-color: rgba(184, 114, 44, 0.5);
@@ -336,6 +342,10 @@ h1 {
   margin: 0;
   color: var(--muted);
   line-height: 1.5;
+}
+
+.card-desc + .card-desc {
+  margin-top: 12px;
 }
 
 .card-link {
