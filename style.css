@@ -264,6 +264,12 @@ h1 {
   grid-template-columns: 1fr;
 }
 
+.card-wrapper {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
 .card {
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -315,7 +321,7 @@ h1 {
   box-shadow: none;
 }
 
-.card:hover {
+.card-wrapper:hover .card {
   transform: translateY(-4px);
   border-color: rgba(184, 114, 44, 0.5);
   background: rgba(184, 114, 44, 0.08);
@@ -350,7 +356,6 @@ h1 {
 
 .card-link {
   margin-top: auto;
-  text-decoration: none;
   font-weight: 700;
   color: var(--accent-2);
   display: inline-flex;
@@ -364,7 +369,7 @@ h1 {
   transition: transform 0.15s ease;
 }
 
-.card-link:hover::after {
+.card-wrapper:hover .card-link::after {
   transform: translateX(3px);
 }
 
